@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="cn" class="scroll-smooth font-sans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAFAlib</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="font.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<!-- CSS -->
+<link rel="icon" type="image/x-icon" href="./media/icons/logo031611.svg">
+<link rel="stylesheet" href="./style/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600&display=swap" rel="stylesheet">
+
+<body class="min-w-[1440px]">
+    <!--进度条 -->
+    <div id="progress-container"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 5px; background-color: #F5F7FA; z-index: 9999; display: none;">
+        <div id="progress-bar" style="height: 100%; width: 0; background-color: #7c7c7c;"></div>
+    </div>
+
+    <!-- Navbar -->
+    <div>
+        <nav class="flex justify-between w-full px-16 py-10 z-30 bg-[#F5F7FA] animate__animated animate__fadeInDown">
+          <div class="flex justify-normal w-1/3 space-x-8">
+            <a href="index.html"
+              class="flex justify-center w-[144px] h-16 justify-normal text-xl rounded-full border border-black/20 text-black hover:bg-black hover:text-white hover:border-0 transition-all duration-300 ease-in-out"><button>✏️
+                WORKS</button></a>
+            <a href="https://www.figma.com/proto/BOqCrQRF74hnkCpTMDyufq/%E4%BD%9C%E5%93%81%E9%9B%86_HCI%E5%AD%A6%E6%9C%AF%E7%89%88?node-id=20-2837&t=abyVySw9ORx68tsa-1"
+              target="_blank"
+              class="flex justify-center w-[178px] h-16 justify-normal text-xl rounded-full border border-black/20 text-black hover:bg-black hover:text-white hover:border-0 transition-all duration-300 ease-in-out"><button>🖼
+                GALLERY</button></a>
+          </div>
+          <div class="flex justify-end w-1/3">
+            <a href="xx.html" target="_blank"
+              class="flex justify-center w-[178px] h-16 justify-normal text-xl rounded-full border border-black/20 text-black hover:bg-black hover:text-white hover:border-0 transition-all duration-300 ease-in-out"><button>👀
+                About Me</button></a>
+          </div>
+        </nav>
+      </div>
+
+    <!-- Cover -->
+    <div class="bg-white h-[270px] flex items-center justify-between px-[96px]">
+        <div class="flex items-center animate__animated animate__fadeInLeft">
+            <div><img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/logo_96_gafa.png"></div>
+            <p class="text-[80px] PF-sm text-black pl-[24px]">GAFAlib</p>
+        </div>
+        <div>
+            <p class="text-[40px] PF-sm animate__animated animate__fadeInRight">Upgraded smart system experience.<br>
+                One-stop shop for affairs and services.</p>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="flex bg-white h-[250px] justify-between px-[96px] animate__animated animate__fadeIn">
+        <div>
+            <p class="text-[32px] PF-sm">Role</p>
+            <p class="pt-[24px] text-[24px] PF-r text-black/60">Strategy<br>
+                UX&UI Designer<br>
+                User Researcher</p>
+        </div>
+        <div>
+            <p class="text-[32px] PF-sm">Overview</p>
+            <p class="pt-[24px] text-[24px] PF-r text-black/60">Client: Guangzhou Academy of Fine Arts<br>
+                Tools: Sketch, Figma, Blender...<br>
+                Timeline: 2022.10 - 2022.12</p>
+        </div>
+        <div>
+            <p class="text-[32px] PF-sm">Keywords</p>
+            <p class="pt-[24px] text-[24px] PF-r text-black/60">B-side product design<br>
+                Web Experience Upgrade<br>
+                Interaction Design</p>
+        </div>
+    </div>
+    <div>
+        <img class="w-full animate__animated animate__fadeIn"
+            src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/gafalib/gafalib_content_cover.png">
+    </div>
+
+    <!-- Content -->
+    <div class="mt-[96px] px-[96px] flex ">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Brief</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <p class="PF-sm text-black text-[32px]">GAFAlib is a platform that connects students to their campus
+                affairs, helping them to process affairs and services.</p>
+            <p class="PF-r text-black/60 text-[24px]">GAFAlib is a platform that connects students to their campus
+                affairs, helping them to process their affairs and apply for school services. It aims to enable students
+                to quickly process their affairs and manage their academic careers through an easy-to-use and highly
+                integrated functional system.
+            </p>
+        </div>
+    </div>
+    <div class="mt-[96px] px-[96px] flex ">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Contribution</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <p class="PF-sm text-black text-[32px]">As the leader of the program, my responsibilities include:</p>
+            <ul class="ml-[24px] PF-r text-black/60 text-[24px] list-disc">
+                <li>Conducting user research to identify needs and pain points.</li>
+                <li>Developing wireframes and prototypes that reflect user-centered design principles.</li>
+                <li>Collaborating closely with stakeholders to ensure alignment with institutional goals.</li>
+                <li>Writing clear and engaging UX content to enhance usability.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="my-[96px] px-[96px] flex">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Problem</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <div class="flex-col space-y-[24px]">
+                <div
+                    class="flex-row space-y-[16px] bg-[#FFF2F2] rounded-[32px] border border-[#FFC2C2] px-[36px] py-[32px]">
+                    <p class="text-black text-[32px] PF-sm">Inefficiency</p>
+                    <p class="text-black/60 text-[24px] PF-r">Time-consuming processes hinder students from accessing
+                        essential services quickly.</p>
+                </div>
+                <div
+                    class="flex-row space-y-[16px] bg-[#FFF2F2] rounded-[32px] border border-[#FFC2C2] px-[36px] py-[32px]">
+                    <p class="text-black text-[32px] PF-sm">Confusion</p>
+                    <p class="text-black/60 text-[24px] PF-r">A fragmented system causes misunderstandings regarding
+                        available resources and procedures.</p>
+                </div>
+                <div
+                    class="flex-row space-y-[16px] bg-[#FFF2F2] rounded-[32px] border border-[#FFC2C2] px-[36px] py-[32px]">
+                    <p class="text-black text-[32px] PF-sm">Engagement</p>
+                    <p class="text-black/60 text-[24px] PF-r">Limited interaction with campus life and activities
+                        reduces student satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-[96px] px-[96px] flex">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Target Users</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <p class="PF-r text-black/60 text-[24px]">The main users of the Smart Portal System include:
+            </p>
+            <div class="flex flex-row space-x-[24px]">
+                <div
+                    class="flex-row space-y-[16px] bg-[#F7F7F7] rounded-[32px] border border-[#DFDFDF] px-[36px] py-[32px]">
+                    <p class="text-black text-[32px] PF-sm">Students</p>
+                    <p class="text-black/60 text-[24px] PF-r">Undergraduates and postgraduates who require easy access
+                        to information and services.</p>
+                </div>
+                <div
+                    class="flex-row space-y-[16px] bg-[#F7F7F7] rounded-[32px] border border-[#DFDFDF] px-[36px] py-[32px]">
+                    <p class="text-black text-[32px] PF-sm">Faculty and Staff</p>
+                    <p class="text-black/60 text-[24px] PF-r">A fragmented system causes misunderstandings regarding
+                        available resources and procedures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[96px] px-[96px] flex ">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Research</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <p class="PF-sm text-black text-[32px]">To inform the design of the Smart Portal System, a comprehensive
+                research phase was implemented. <a
+                    href=""
+                    target="_blank" class="text-[#853AFF] hover:underline">You can view the user research process by
+                    clicking here.</a></p>
+            <ul class="ml-[24px] PF-r text-[24px] list-disc ">
+                <li><a class="text-black PF-sm">User Interviews: </a><a class="text-black/60">Conducting in-depth
+                        interviews with students and staff to gather insights into their experiences and challenges.</a>
+                </li>
+                <li><a class="text-black PF-sm">Surveys: </a><a class="text-black/60">Distributing questionnaires to
+                        quantify user needs and
+                        preferences.</a>
+                </li>
+                <li><a class="text-black PF-sm">Competitive Analysis: </a><a class="text-black/60">Evaluating similar
+                        platforms from other institutions to identify best
+                        practices and innovative features.</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="my-[96px] px-[96px] flex">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Insights</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <p class="PF-r text-black/60 text-[24px]">From the research conducted, several key insights emerged that
+                guided the design and development of the Smart Portal System:
+            </p>
+            <div class="flex flex-col space-y-[24px]">
+                <div class="flex flex-row space-x-[24px]">
+                    <div
+                        class="flex-row space-y-[16px] bg-[#F7F7F7] rounded-[32px] border border-[#DFDFDF] px-[36px] py-[32px]">
+                        <p class="text-black text-[32px] PF-sm">💡User Frustrations</p>
+                        <p class="text-black/60 text-[24px] PF-r">Many students reported frustration with the current
+                            processes for accessing services, often leading to time wasted and increased stress.</p>
+                    </div>
+                    <div
+                        class="flex-row space-y-[16px] bg-[#F7F7F7] rounded-[32px] border border-[#DFDFDF] px-[36px] py-[32px]">
+                        <p class="text-black text-[32px] PF-sm">💡Diverse Needs</p>
+                        <p class="text-black/60 text-[24px] PF-r">The student body is diverse, with varying degrees of
+                            familiarity with digital tools.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-[24px]">
+                    <div
+                        class="flex-row space-y-[16px] bg-[#F7F7F7] rounded-[32px] border border-[#DFDFDF] px-[36px] py-[32px]">
+                        <p class="text-black text-[32px] PF-sm">💡Information Overload</p>
+                        <p class="text-black/60 text-[24px] PF-r">Students often find themselves overwhelmed by the
+                            sheer volume of information available.</p>
+                    </div>
+                    <div
+                        class="flex-row space-y-[16px] bg-[#F7F7F7] rounded-[32px] border border-[#DFDFDF] px-[36px] py-[32px]">
+                        <p class="text-black text-[32px] PF-sm">💡Real-Time Updates</p>
+                        <p class="text-black/60 text-[24px] PF-r">The importance of real-time updates and notifications
+                            was highlighted, particularly concerning administrative tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[96px] px-[96px] flex">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Solutions</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[96px]">
+            <div class="flex-col flex space-y-[36px]">
+                <p class="PF-sm text-black text-[32px]">Homepage Features</p>
+                <img class="border-[8px] rounded-[36px] border-white shadow-2xl shadow-[#F2F2F2]"
+                    src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/gafalib/gafalib_page1.png">
+                <ul class="ml-[24px] PF-r text-[24px] list-disc">
+                    <li><a class="text-black PF-sm">Quick Access Links: </a><a class="text-black/60">Direct buttons to
+                            frequently used services, informed by user behavior and preferences identified in
+                            research.</a>
+                    </li>
+                    <li><a class="text-black PF-sm">Notifications: </a><a class="text-black/60">Alerts for upcoming
+                            deadlines, events, and announcements, ensuring users stay informed without feeling
+                            overwhelmed.</a>
+                    </li>
+                    <li><a class="text-black PF-sm">Personalized Dashboard: </a><a class="text-black/60">A customizable
+                            space where students can pin their most-used services, addressing the need for
+                            individualization.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-col flex space-y-[36px]">
+                <p class="PF-sm text-black text-[32px]">Service Hall Features</p>
+                <img class="border-[8px] rounded-[36px] border-white shadow-2xl shadow-[#F2F2F2]"
+                    src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/gafalib/gafalib_page2.png">
+                <ul class="ml-[24px] PF-r text-[24px] list-disc">
+                    <li><a class="text-black PF-sm">Centralized Services: </a><a class="text-black/60">A comprehensive
+                            list of campus services including counseling, academic support, and extracurricular
+                            activities, organized to prevent information overload.</a>
+                    </li>
+                    <li><a class="text-black PF-sm">Booking System: </a><a class="text-black/60">An integrated system
+                            for scheduling appointments and reservations that is easy to navigate for users with varying
+                            tech skills.</a>
+                    </li>
+                    <li><a class="text-black PF-sm">FAQs and Resources: </a><a class="text-black/60">Clearly categorized
+                            access to common questions and related resources to assist students in finding answers
+                            quickly without frustration.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-col flex space-y-[36px]">
+                <p class="PF-sm text-black text-[32px]">Transaction Hall Features</p>
+                <img class="border-[8px] rounded-[36px] border-white shadow-2xl shadow-[#F2F2F2]"
+                    src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/gafalib/gafalib_page3.png">
+                <ul class="ml-[24px] PF-r text-[24px] list-disc">
+                    <li><a class="text-black PF-sm">Transaction Management: </a><a class="text-black/60">A platform that
+                            allows users to submit requests, applications, and documents effortlessly while providing
+                            clear guidance at each step.</a>
+                    </li>
+                    <li><a class="text-black PF-sm">Status Tracking: </a><a class="text-black/60">Real-time updates on
+                            the status of submitted requests, designed to enhance transparency and user confidence.</a>
+                    </li>
+                    <li><a class="text-black PF-sm">Feedback System: </a><a class="text-black/60">An option for users to
+                            provide feedback on services and transactions to identify areas for improvement, fostering
+                            an environment of continuous enhancement.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[96px] px-[96px] flex ">
+        <div class="flex w-2/5">
+            <p class="PF-sm text-black text-[72px]">Next Steps</p>
+        </div>
+        <div class="flex-col w-3/5 py-[16px] space-y-[36px]">
+            <p class="PF-sm text-black text-[32px]">To ensure the successful implementation of the Smart Portal System,
+                the following steps will be undertaken:</p>
+            <ul class="ml-[24px] PF-r text-[24px] list-disc ">
+                <li class="text-black/60">Supplement the design of the teacher's side and invite teachers to experience
+                    it and do usability testing.
+                </li>
+                <li class="text-black/60">Collaborate with the development team to build the portal based on the final
+                    designs, ensuring all features are user-friendly and inclusive.
+                </li>
+                <li class="text-black/60">Monitor user engagement and gather feedback for ongoing improvements and
+                    feature enhancements, ensuring the platform evolves alongside user needs.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Ending -->
+    <div class="bg-white text-[24px] PF-sm mt-[96px]">
+        <div class="flex justify-center p-[40px] text-[#808080]">
+            <p>🎉感谢您看到这里！</p>
+            <a href="index.html" target="_blank" class="text-black hover:underline ">点此返回首页。</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div>
+        <footer class="bg-white text-[20px]">
+            <div class="flex justify-between p-[40px] text-black/60">
+                <p>© 2024 Louisa. </p>
+                <a href="mailto:luoyiz2237@gmail.com"
+                  class="hover:underline hover:text-black transition-all duration-300 ease-in-out">
+                  luoyiz2237@gmail.cm
+                </a>
+              </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
